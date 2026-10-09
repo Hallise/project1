@@ -14,6 +14,8 @@ header {
     padding-top: 20px;
     padding-bottom: 10px;
     color: rgb(0, 0, 0);
+    border: 5px solid rgb(97, 0, 252);
+    font-style: italic;
 }
 
 footer {
@@ -63,4 +65,93 @@ a {
 .content {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+nav a:visited {
+    color: blueviolet;
+}
+nav a:hover {
+    color: chartreuse;
+    text-decoration: underline;
+}
+nav a:focus {
+    color: aqua;
+    transform: scale(1.2);
+}
+
+nav a:active {
+    color: crimson;
+}
+nav a {
+    color: darkgreen;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#articles li:nth-child(odd) {
+    background-color: darkslateblue;
+}
+#articles li:nth-child(even) {
+    background-color: rgb(61, 139, 61);
+}
+
+h2::after {
+    content: "popka!";
+    font-size: 12px;
+    margin-left: 10px;
+    color: rgb(98, 0, 255);
+}
+
+.bi-stars {
+    color: darkgreen;
+    font-size: 20px;
+}
+
+#articles a::after {
+    content: "\F6A9";
+    font-family: "bootstrap-icons";
+    color: greenyellow;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/*--------Верстка формы---------*/
+.form-reg {
+    width: 250px;
+    margin: 20px auto;
+    background-color: rgb(95, 87, 150);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+input {
+    background-color: rgb(151, 141, 214);
+    border: darkslateblue 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: darkslateblue;
+}
+
+input[type=submit] {
+    background-color: rgb(61, 139, 61);
+    color: aliceblue;
+    padding: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(49, 37, 126);
+    cursor: pointer;
+}
+
+input[type=checkbox],
+input[type-radio] {
+    accent-color: rgb(0, 255, 0);
+}
+
+select {
+    width: 180px;
+}
+textarea {
+    width: 180px;
 }
