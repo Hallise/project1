@@ -3,18 +3,24 @@
     padding: 0;
 }
 
-html {
+body {
     font-size: 1em;
     font-family: "Fira Sans", sans-serif;
 }
 
+h1,h2,h3 
+{
+    font-weight: 100px;
+    font-family: "Pattaya", sans-serif;
+}
+
 header {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(123, 107, 150);
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
     color: rgb(0, 0, 0);
-    border: 5px solid rgb(97, 0, 252);
+    border: 5px solid rgb(66, 35, 119);
     font-style: italic;
 }
 
@@ -29,8 +35,9 @@ footer {
     text-align: center;
 }
 
+
 #articles {
-    background-color: rgb(87, 87, 87);
+    background-color: rgb(89, 95, 121);
     padding: 20px;
 }
 
@@ -39,6 +46,14 @@ p {
     font-size: 1.2rem;
     line-height: 2.4rem;
     margin-bottom: 0.5rem;
+}
+
+#about p:first-line {
+    letter-spacing: 5px;
+ } 
+
+p:lang(en){
+    font-size:15pt;
 }
 
 h2 {
@@ -57,7 +72,6 @@ nav ul {
     justify-content: center;
 }
 
-
 a {
     color: black;
 }
@@ -68,36 +82,36 @@ a {
 }
 
 nav a:visited {
-    color: blueviolet;
+    color: rgb(0, 0, 0);
 }
 nav a:hover {
-    color: chartreuse;
+    color: rgb(66, 35, 119);
     text-decoration: underline;
 }
 nav a:focus {
-    color: aqua;
+    color: rgb(195, 0, 255);
     transform: scale(1.2);
 }
 
 nav a:active {
-    color: crimson;
+    color: rgb(66, 35, 119);
 }
 nav a {
-    color: darkgreen;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
     transition: 0.5s;
 }
 
 #articles li:nth-child(odd) {
-    background-color: darkslateblue;
+    background-color: rgb(61, 75, 139);
 }
 #articles li:nth-child(even) {
-    background-color: rgb(61, 139, 61);
+    background-color: rgb(42, 55, 114);
 }
 
 h2::after {
-    content: "popka!";
+    content: "hi!";
     font-size: 12px;
     margin-left: 10px;
     color: rgb(98, 0, 255);
@@ -111,7 +125,7 @@ h2::after {
 #articles a::after {
     content: "\F6A9";
     font-family: "bootstrap-icons";
-    color: greenyellow;
+    color: rgb(2, 4, 110);
     margin-left: 20px;
     text-decoration: none;
 }
@@ -154,4 +168,50 @@ select {
 }
 textarea {
     width: 180px;
+}
+
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: rgb(38, 0, 255);
+    text-decoration: underline;
+}
+a:focus {
+    color: rgb(0, 217, 255);
+    transform: scale(1.2);
+}
+
+a:active {
+    color: rgb(0, 4, 223);
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+li:nth-child(4)::before {
+    background-color: rgb(15, 58, 230);
+    content: "Важно!";
+    font-size: 12px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.blue
+{
+    color: blue;
+}
+
+.border
+{
+    border: black solid 1px;
+}
+
+h2 + figure {
+    padding-bottom: 100px;
 }
