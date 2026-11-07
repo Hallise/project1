@@ -68,7 +68,6 @@
             <img width="200px" src="img/tetya.jpg" alt="портет">
             <figcaption>Хеди Ламарр в фильме МГМ «Райское тело», 1944</figcaption>
         </figure>
-        </a>
         <p class="blue">Хедвиг Ева Мария Кислер родилась <del>10</del> 9 ноября 1914 года в Вене и была единственным ребёнком управляющего банком Эмиля Кислера (1880—1935), родом из Львова, и его жены Гертруды Кислер (дев. Лихтвиц; 1894—1977), пианистки из богатой будапештской еврейской семьи.</splan>
         <p lang="en">At the age of sixteen, Hedwig left home, enrolled in drama school, and began her film career, making her debut in the German-Austrian movie *Money on the Street* (1930). Director Max Reinhardt called Hedy the most beautiful woman in Europe. That same year, the actress was invited to Berlin by Reinhardt. She achieved worldwide fame with the Czechoslovak-Austrian film *Ecstasy* (1933), directed by Gustav Machatý, in which she played the role of Eva. A ten-minute scene featuring a young woman bathing naked in a forest lake—quite innocent by 21st-century standards—sparked a storm of controversy in 1933. The film was banned in several countries and was only released—with censored cuts—several years later. That same year, Hedwig married the Austrian arms manufacturer and millionaire Fritz Mandl, who later attempted to buy up all existing copies of *Ecstasy* from circulation in Vienna.</p>
         <p>
@@ -108,16 +107,30 @@
             <option value="mos">Предложить сотрудничество</option>
             <option value="st.pet">Другое</option>
         </select><br>
+
         <label for="login">Имя</label><br>
         <input type="text" id="login" name="login" placeholder="Введите имя" required><br>
+
         <label for="pass">E-mail</label><br>
-        <input type="password" id="pass" name="password" placeholder="Введите почту" required><br>
+        <input type="email" id="E-mail" name="E-mail" placeholder="Введите почту" required><br>
+
+        <label for="phone">Телефон</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" class="form-field"><br>
+
+        <label for="birthdate">Дата рождения</label><br>
+        <input type="date" id="birthdate" name="birthdate" class="form-field"><br>
+
         <label for="comment">Текст сообщения</label><br>
         <textarea name="comment" id="comment" 
-        placeholder="Комментарий" rows="5" cols="20"></textarea>
+        placeholder="Комментарий" rows="5" cols="20" required></textarea>
+
+        <label class="checkbox-label">
+            <input type="checkbox" name="subscribe" id="subscribe" checked>
+            Получать новости о Хеди Ламарр
+        </label><br>
 
         <input type="submit" value="Отправить"><br>
-        <input type="reset">
+        <input type="reset" value="Сбросить">
     </form>
 </section>
 </main>
@@ -129,8 +142,8 @@
         <a target="_blank"href="https://midis.ru/specialities/razrabotka-kompyuternykh-igr-i-prilozheniy-s-virtualnoy-i-dopolnennoy-realnostyu-vr-ar/">здесь</a></p>
     <p><a href="tel:89939337418">8(993)-933-74-18</a></p>
     <p><a href="mailto:varya.askarova.07@mail.ru">varya.askarova.07@mail.ru</a></p>
-    <a target="_blank" href="https://github.com/"><img wigth="200px" src="img/11.svg" alt="github" class="border"></a>
-    <a target="_blank" href="https://store.steampowered.com/?l=russian"><img wigth="200px" src="img/steam.svg" alt="steam" class="border"></a>
+    <a target="_blank" href="https://github.com/"><img width="25px" src="img/11.svg" alt="github" class="border"></a>
+    <a target="_blank" href="https://store.steampowered.com/?l=russian"><img width="25px" src="img/steam.svg" alt="steam" class="border"></a>
     <i class="bi bi-stars"></i>
 </footer>
 </body>
